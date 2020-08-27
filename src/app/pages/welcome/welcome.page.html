@@ -1,0 +1,36 @@
+<ion-content fullscreen scroll-y=false>
+  <ion-slides fullscreen pager="true" [options]="slideOpts">
+    <ion-slide>
+      <ion-row>
+        <div class="text" padding>
+          <h2>Smart Parking</h2>
+          <p>Aplikasi sekuriti dalam otomasi sistem parkir</p>
+        </div>
+      </ion-row>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-row>
+        <div class="text" padding>
+          <h2>Easy to Use</h2>
+          <p>Sistem ini mudah digunakan untuk melakukan parkir dan pembayaran</p>
+        </div>
+      </ion-row>
+    </ion-slide>
+
+    <ion-slide>
+      <ion-row>
+        <div class="text" padding>
+          <h2>eWallet</h2>
+          <p>Memiliki fitur untuk dapat mengisi saldo yang digunakan dalam pembayaran</p>
+
+          <ion-row class="ion-justify-content-center">
+            <ion-button class="button" expand='full' color='hakuy-pink' shape='round' (click)='navigateToLoginPage()'>
+              Continue <ion-icon name="arrow-forward"></ion-icon>
+            </ion-button>
+          </ion-row>
+        </div>
+      </ion-row>
+    </ion-slide>
+  </ion-slides>
+</ion-content>

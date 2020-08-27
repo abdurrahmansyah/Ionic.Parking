@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar color="hakuy-dongker">
+    <ion-buttons slot="start">
+      <ion-back-button color="hk-white-red"></ion-back-button>
+    </ion-buttons>
+    <ion-title>TopUp</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card style="height: 100px; vertical-align: middle;" class="ion-text-center">
+    <ion-text style="font-weight: 700; font-size: 20px; position: absolute; left: 0px; right: 0px; top: 35px;">Saldo :
+      {{userSaldo}}</ion-text>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-label>Masukkan Jumlah TopUp</ion-label>
+      <ion-input type="number" [(ngModel)]="totalTopUp" name="totalTopUp"></ion-input>
+    </ion-item>
+  </ion-card>
+</ion-content>
+
+<ion-footer no-shadow no-border padding>
+  <ion-toolbar>
+    <ion-card no-border>
+      <ion-item button detail color="hakuy-dongker" (click)="topUp()">TopUp</ion-item>
+    </ion-card>
+  </ion-toolbar>
+</ion-footer>

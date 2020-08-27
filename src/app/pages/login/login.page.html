@@ -1,0 +1,41 @@
+<ion-content>
+  <div class="bg-img"></div>
+  <form registerForm="ngForm" (ngSubmit)="Login()">
+    <ion-card mode="ios">
+      <ion-row class="ion-align-items-center">
+        <ion-col>
+          <h1>Login</h1>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-align-items-center">
+        <ion-col>
+          <ion-item>
+            <ion-input type="text" placeholder="Nopol Kendaraan" [(ngModel)]="szUserNopol" name="szUserNopol" required>
+            </ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-align-items-center">
+        <ion-col>
+          <ion-item>
+            <ion-input type="password" placeholder="Password" [(ngModel)]="szPassword" name="szPassword" required>
+            </ion-input>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="ion-align-items-center">
+        <ion-col class="signup-col">
+          <ion-button shape="round" expand="block" color='hakuy-dongker' type="submit">Login
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+  </form>
+  <div class="ion-text-center">
+    <ion-text>or </ion-text>
+    <ion-text button color="hakuy-pink" (click)="CreateNewAccount()">Create New Account</ion-text>
+  </div>
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button slot="start" (click)="CloseQrCode()" color="hakuy-dongker" size="small" mode="ios">close
+    </ion-button>
+    <ion-button slot="primary" (click)="CloseQrCode()" color="hakuy-dongker" size="small" mode="ios">done
+    </ion-button>
+    <ion-title style="text-align: center;">Qr Code</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div style="text-align:center; padding-top: 30%;">
+    <ngx-qrcode [elementType]="elementType" [value]="qrData" cssClass="qrCode"></ngx-qrcode>
+
+    <h2>Tempelkan QRCode ke Mesin Reader</h2>
+  </div>
+
+
+
+</ion-content>

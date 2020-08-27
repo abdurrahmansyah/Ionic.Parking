@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
-import { Routes, RouterModule } from '@angular/router';
-import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
 
-import { HomePage } from './home.page';
+import { IonicModule } from '@ionic/angular';
+
+import { QrCodePage } from './qr-code.page';
+import { RouterModule, Routes } from '@angular/router';
+import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomePage,
+    component: QrCodePage
   }
 ];
 
@@ -22,6 +23,6 @@ const routes: Routes = [
     RouterModule.forChild(routes),
     NgxQRCodeModule
   ],
-  declarations: [HomePage]
+  declarations: [QrCodePage]
 })
-export class HomePageModule {}
+export class QrCodePageModule {}

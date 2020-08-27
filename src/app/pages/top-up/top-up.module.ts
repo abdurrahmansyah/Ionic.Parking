@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
-import { Routes, RouterModule } from '@angular/router';
-import { NgxQRCodeModule } from '@techiediaries/ngx-qrcode';
 
-import { HomePage } from './home.page';
+import { IonicModule } from '@ionic/angular';
+
+import { TopUpPage } from './top-up.page';
+import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
     path: '',
-    component: HomePage,
+    component: TopUpPage
   }
 ];
 
@@ -19,9 +19,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     IonicModule,
-    RouterModule.forChild(routes),
-    NgxQRCodeModule
+    RouterModule.forChild(routes)
   ],
-  declarations: [HomePage]
+  declarations: [TopUpPage]
 })
-export class HomePageModule {}
+export class TopUpPageModule {}
